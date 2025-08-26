@@ -1,1 +1,12 @@
 runtime: nodejs20
+entrypoint: node server.js
+
+env_variables:
+  FIREBASE_PROJECT_ID: "lastproject-461007"
+  FIREBASE_CLIENT_EMAIL: "firebase-adminsdk-fbsvc@lastproject-461007.iam.gserviceaccount.com"
+  FIREBASE_PRIVATE_KEY: "-----------ISI KEY DISINI----------"
+  FIREBASE_STORAGE_BUCKET: "capstonestorage1"
+
+automatic_scaling:
+  target_cpu_utilization: 0.65
+  min_instances: 1
